@@ -21,11 +21,7 @@ This repository contains an **Apache Airflow DAG** that performs an ETL pipeline
 4. **Notify** success via email
 
 Task dependency:
-```
 
-extract → transform → load → notify_success
-
-````
 
 ---
 
@@ -42,11 +38,6 @@ extract → transform → load → notify_success
   - `server="host.docker.internal"`
   - `database="SourceDB"`
   - `port=1433`
-- Reads:
-```sql
-SELECT Id, Name, CreatedAt, Amount
-FROM dbo.SourceTable;
-````
 
 * Returns rows as `list[dict]` using `as_dict=True`.
 
@@ -70,16 +61,6 @@ Applied transformations:
 
   * `host="postgres"`, `port=5432`
   * `dbname="airflow"`, `user="airflow"`, `password="airflow"`
-* Creates table if not exists:
-
-```sql
-CREATE TABLE IF NOT EXISTS target_table (
-  id         INTEGER PRIMARY KEY,
-  name       TEXT,
-  created_at TIMESTAMP,
-  amount     DOUBLE PRECISION
-);
-```
 
 * Truncates the table each run:
 
@@ -97,7 +78,7 @@ TRUNCATE TABLE target_table;
 
 After loading completes, `EmailOperator` sends a success email:
 
-* Subject: `ETL etl_sqlserver_to_postgres succeeded`
+* Subject: `✅ ETL etl_sqlserver_to_postgres succeeded`
 * Includes:
 
   * DAG id
