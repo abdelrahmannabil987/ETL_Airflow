@@ -1,0 +1,35 @@
+[2025-11-30T11:20:02.326+0000] {processor.py:161} INFO - Started process (PID=92) to work on /opt/airflow/dags/ETL_Dag.py
+[2025-11-30T11:20:02.329+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_Dag.py for tasks to queue
+[2025-11-30T11:20:02.337+0000] {logging_mixin.py:188} INFO - [2025-11-30T11:20:02.336+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_Dag.py
+[2025-11-30T11:20:02.496+0000] {processor.py:840} INFO - DAG(s) 'etl_sqlserver_to_postgres' retrieved from /opt/airflow/dags/ETL_Dag.py
+[2025-11-30T11:20:02.623+0000] {logging_mixin.py:188} INFO - [2025-11-30T11:20:02.623+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-11-30T11:20:02.696+0000] {logging_mixin.py:188} INFO - [2025-11-30T11:20:02.695+0000] {dag.py:3834} INFO - Setting next_dagrun for etl_sqlserver_to_postgres to None, run_after=None
+[2025-11-30T11:20:02.759+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_Dag.py took 0.444 seconds
+[2025-11-30T11:21:00.381+0000] {processor.py:161} INFO - Started process (PID=89) to work on /opt/airflow/dags/ETL_Dag.py
+[2025-11-30T11:21:00.384+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_Dag.py for tasks to queue
+[2025-11-30T11:21:00.388+0000] {logging_mixin.py:188} INFO - [2025-11-30T11:21:00.387+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_Dag.py
+[2025-11-30T11:21:00.488+0000] {processor.py:840} INFO - DAG(s) 'etl_sqlserver_to_postgres' retrieved from /opt/airflow/dags/ETL_Dag.py
+[2025-11-30T11:21:00.572+0000] {logging_mixin.py:188} INFO - [2025-11-30T11:21:00.572+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-11-30T11:21:00.600+0000] {logging_mixin.py:188} INFO - [2025-11-30T11:21:00.600+0000] {dag.py:3834} INFO - Setting next_dagrun for etl_sqlserver_to_postgres to None, run_after=None
+[2025-11-30T11:21:00.771+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_Dag.py took 0.398 seconds
+[2025-11-30T11:21:31.084+0000] {processor.py:161} INFO - Started process (PID=96) to work on /opt/airflow/dags/ETL_Dag.py
+[2025-11-30T11:21:31.086+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_Dag.py for tasks to queue
+[2025-11-30T11:21:31.091+0000] {logging_mixin.py:188} INFO - [2025-11-30T11:21:31.090+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_Dag.py
+[2025-11-30T11:21:31.215+0000] {processor.py:840} INFO - DAG(s) 'etl_sqlserver_to_postgres' retrieved from /opt/airflow/dags/ETL_Dag.py
+[2025-11-30T11:21:31.279+0000] {logging_mixin.py:188} INFO - [2025-11-30T11:21:31.278+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-11-30T11:21:31.308+0000] {logging_mixin.py:188} INFO - [2025-11-30T11:21:31.308+0000] {dag.py:3834} INFO - Setting next_dagrun for etl_sqlserver_to_postgres to None, run_after=None
+[2025-11-30T11:21:31.410+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_Dag.py took 0.335 seconds
+[2025-11-30T14:18:32.910+0000] {processor.py:161} INFO - Started process (PID=95) to work on /opt/airflow/dags/ETL_Dag.py
+[2025-11-30T14:18:32.913+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_Dag.py for tasks to queue
+[2025-11-30T14:18:32.918+0000] {logging_mixin.py:188} INFO - [2025-11-30T14:18:32.917+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_Dag.py
+[2025-11-30T14:18:33.067+0000] {processor.py:840} INFO - DAG(s) 'etl_sqlserver_to_postgres' retrieved from /opt/airflow/dags/ETL_Dag.py
+[2025-11-30T14:18:33.180+0000] {logging_mixin.py:188} INFO - [2025-11-30T14:18:33.180+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-11-30T14:18:33.219+0000] {logging_mixin.py:188} INFO - [2025-11-30T14:18:33.218+0000] {dag.py:3834} INFO - Setting next_dagrun for etl_sqlserver_to_postgres to None, run_after=None
+[2025-11-30T14:18:33.269+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_Dag.py took 0.367 seconds
+[2025-11-30T14:19:03.660+0000] {processor.py:161} INFO - Started process (PID=102) to work on /opt/airflow/dags/ETL_Dag.py
+[2025-11-30T14:19:03.672+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_Dag.py for tasks to queue
+[2025-11-30T14:19:03.689+0000] {logging_mixin.py:188} INFO - [2025-11-30T14:19:03.688+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_Dag.py
+[2025-11-30T14:19:04.200+0000] {processor.py:840} INFO - DAG(s) 'etl_sqlserver_to_postgres' retrieved from /opt/airflow/dags/ETL_Dag.py
+[2025-11-30T14:19:04.343+0000] {logging_mixin.py:188} INFO - [2025-11-30T14:19:04.342+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-11-30T14:19:04.396+0000] {logging_mixin.py:188} INFO - [2025-11-30T14:19:04.395+0000] {dag.py:3834} INFO - Setting next_dagrun for etl_sqlserver_to_postgres to None, run_after=None
+[2025-11-30T14:19:04.476+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_Dag.py took 0.838 seconds

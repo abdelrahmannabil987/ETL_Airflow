@@ -1,0 +1,17 @@
+[2025-11-13T22:36:11.682+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_echo_dag.echo_done manual__2025-11-13T22:36:05.416597+00:00 [queued]>
+[2025-11-13T22:36:11.707+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_echo_dag.echo_done manual__2025-11-13T22:36:05.416597+00:00 [queued]>
+[2025-11-13T22:36:11.709+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-11-13T22:36:11.838+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): echo_done> on 2025-11-13 22:36:05.416597+00:00
+[2025-11-13T22:36:11.848+0000] {standard_task_runner.py:60} INFO - Started process 162 to run task
+[2025-11-13T22:36:11.856+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'simple_echo_dag', 'echo_done', 'manual__2025-11-13T22:36:05.416597+00:00', '--job-id', '50', '--raw', '--subdir', 'DAGS_FOLDER/firstdag.py', '--cfg-path', '/tmp/tmp0tnhr9rf']
+[2025-11-13T22:36:11.859+0000] {standard_task_runner.py:88} INFO - Job 50: Subtask echo_done
+[2025-11-13T22:36:12.150+0000] {task_command.py:423} INFO - Running <TaskInstance: simple_echo_dag.echo_done manual__2025-11-13T22:36:05.416597+00:00 [running]> on host ef71c93b0802
+[2025-11-13T22:36:12.546+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='simple_echo_dag' AIRFLOW_CTX_TASK_ID='echo_done' AIRFLOW_CTX_EXECUTION_DATE='2025-11-13T22:36:05.416597+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-13T22:36:05.416597+00:00'
+[2025-11-13T22:36:12.549+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-11-13T22:36:12.552+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo "All good. DAG run manual__2025-11-13T22:36:05.416597+00:00 finished these echoes."']
+[2025-11-13T22:36:12.579+0000] {subprocess.py:86} INFO - Output:
+[2025-11-13T22:36:12.583+0000] {subprocess.py:93} INFO - All good. DAG run manual__2025-11-13T22:36:05.416597+00:00 finished these echoes.
+[2025-11-13T22:36:12.585+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-11-13T22:36:12.684+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=simple_echo_dag, task_id=echo_done, execution_date=20251113T223605, start_date=20251113T223611, end_date=20251113T223612
+[2025-11-13T22:36:12.795+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-11-13T22:36:12.848+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

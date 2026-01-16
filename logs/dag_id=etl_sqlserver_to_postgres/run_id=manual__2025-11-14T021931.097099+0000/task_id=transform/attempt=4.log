@@ -1,0 +1,13 @@
+[2025-11-14T03:04:21.169+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_sqlserver_to_postgres.transform manual__2025-11-14T02:19:31.097099+00:00 [queued]>
+[2025-11-14T03:04:21.187+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_sqlserver_to_postgres.transform manual__2025-11-14T02:19:31.097099+00:00 [queued]>
+[2025-11-14T03:04:21.188+0000] {taskinstance.py:2193} INFO - Starting attempt 4 of 5
+[2025-11-14T03:04:21.213+0000] {taskinstance.py:2217} INFO - Executing <Task(_PythonDecoratedOperator): transform> on 2025-11-14 02:19:31.097099+00:00
+[2025-11-14T03:04:21.223+0000] {standard_task_runner.py:60} INFO - Started process 923 to run task
+[2025-11-14T03:04:21.240+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_sqlserver_to_postgres', 'transform', 'manual__2025-11-14T02:19:31.097099+00:00', '--job-id', '91', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Dag.py', '--cfg-path', '/tmp/tmpc4lvh5im']
+[2025-11-14T03:04:21.244+0000] {standard_task_runner.py:88} INFO - Job 91: Subtask transform
+[2025-11-14T03:04:21.387+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_sqlserver_to_postgres.transform manual__2025-11-14T02:19:31.097099+00:00 [running]> on host 19f297e328e4
+[2025-11-14T03:04:21.580+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='abdelrahmannabil987@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_sqlserver_to_postgres' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2025-11-14T02:19:31.097099+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-14T02:19:31.097099+00:00'
+[2025-11-14T03:04:21.584+0000] {python.py:202} INFO - Done. Returned value was: [{'id': 1, 'name': 'Ahmed', 'created_at': datetime.datetime(2025, 11, 13, 10, 0), 'amount': 100.5}, {'id': 2, 'name': 'Sara', 'created_at': datetime.datetime(2025, 11, 13, 11, 0), 'amount': 200.0}, {'id': 3, 'name': 'Mohamed', 'created_at': datetime.datetime(2025, 11, 14, 9, 30), 'amount': 300.75}]
+[2025-11-14T03:04:21.636+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=etl_sqlserver_to_postgres, task_id=transform, execution_date=20251114T021931, start_date=20251114T030421, end_date=20251114T030421
+[2025-11-14T03:04:21.692+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-11-14T03:04:21.799+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

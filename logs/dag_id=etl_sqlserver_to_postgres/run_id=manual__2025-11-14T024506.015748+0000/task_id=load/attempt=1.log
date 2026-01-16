@@ -1,0 +1,13 @@
+[2025-11-14T02:45:12.184+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_sqlserver_to_postgres.load manual__2025-11-14T02:45:06.015748+00:00 [queued]>
+[2025-11-14T02:45:12.201+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_sqlserver_to_postgres.load manual__2025-11-14T02:45:06.015748+00:00 [queued]>
+[2025-11-14T02:45:12.203+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2025-11-14T02:45:12.226+0000] {taskinstance.py:2217} INFO - Executing <Task(_PythonDecoratedOperator): load> on 2025-11-14 02:45:06.015748+00:00
+[2025-11-14T02:45:12.240+0000] {standard_task_runner.py:60} INFO - Started process 606 to run task
+[2025-11-14T02:45:12.248+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_sqlserver_to_postgres', 'load', 'manual__2025-11-14T02:45:06.015748+00:00', '--job-id', '67', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Dag.py', '--cfg-path', '/tmp/tmpeyugabz_']
+[2025-11-14T02:45:12.251+0000] {standard_task_runner.py:88} INFO - Job 67: Subtask load
+[2025-11-14T02:45:12.374+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_sqlserver_to_postgres.load manual__2025-11-14T02:45:06.015748+00:00 [running]> on host 19f297e328e4
+[2025-11-14T02:45:12.546+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_sqlserver_to_postgres' AIRFLOW_CTX_TASK_ID='load' AIRFLOW_CTX_EXECUTION_DATE='2025-11-14T02:45:06.015748+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-14T02:45:06.015748+00:00'
+[2025-11-14T02:45:12.657+0000] {python.py:202} INFO - Done. Returned value was: Loaded 3 rows into target_table
+[2025-11-14T02:45:12.703+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=etl_sqlserver_to_postgres, task_id=load, execution_date=20251114T024506, start_date=20251114T024512, end_date=20251114T024512
+[2025-11-14T02:45:12.743+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-11-14T02:45:12.779+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
